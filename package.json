@@ -1,30 +1,27 @@
 {
-    "private": true,
-    "scripts": {
-        "dev": "npm run development",
-        "development": "mix",
-        "watch": "mix watch",
-        "watch-poll": "mix watch -- --watch-options-poll=1000",
-        "hot": "mix watch --hot",
-        "prod": "npm run production",
-        "production": "mix --production"
-    },
-    "devDependencies": {
-        "@inertiajs/inertia": "^0.10.0",
-        "@inertiajs/inertia-vue3": "^0.5.1",
-        "@inertiajs/progress": "^0.2.6",
-        "@tailwindcss/forms": "^0.4.0",
-        "@vue/compiler-sfc": "^3.0.5",
-        "alpinejs": "^3.4.2",
-        "autoprefixer": "^10.2.4",
-        "axios": "^0.21",
-        "laravel-mix": "^6.0.6",
-        "lodash": "^4.17.19",
-        "postcss": "^8.2.13",
-        "postcss-import": "^14.0.1",
-        "tailwindcss": "^3.0.0",
-        "vue": "^3.2.26",
-        "vue-loader": "^16.1.2"
-    },
-    "dependencies": {}
+  "name": "tamagotchi",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.2",
+    "framer-motion": "^12.38.0",
+    "lucide-react": "^1.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router-dom": "^7.14.0",
+    "tailwindcss": "^4.2.2"
+  }
 }

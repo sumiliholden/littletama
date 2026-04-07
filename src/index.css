@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+/* ===== SANRIO TAMAGOTCHI NEO-BRUTALISM THEME ===== */
+
+@theme {
+  --color-pink: #FFB7C5;
+  --color-pink-dark: #FF87A0;
+  --color-pink-light: #FFD6E0;
+  --color-lavender: #C5A3FF;
+  --color-lavender-dark: #A07AE6;
+  --color-mint: #A8F0D2;
+  --color-mint-dark: #6BD9AB;
+  --color-yellow: #FFF176;
+  --color-yellow-dark: #FFE040;
+  --color-peach: #FFCCBC;
+  --color-sky: #90CAF9;
+  --color-sky-dark: #64B5F6;
+  --color-coral: #FF8A80;
+  --color-cream: #FFFEF5;
+  --color-ink: #1A1A2E;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* ===== BASE ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* ===== NEO-BRUTALISM COMPONENT CLASSES ===== */
+
+.neo-card {
+  @apply bg-cream border-3 border-ink rounded-2xl transition-all duration-200 ease-out;
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+.neo-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--color-ink);
+}
+
+.neo-btn {
+  @apply inline-flex items-center gap-2 px-6 py-3 font-heading font-semibold text-base border-3 border-ink rounded-xl cursor-pointer no-underline text-ink transition-all duration-150 ease-out;
+  box-shadow: 4px 4px 0px var(--color-ink);
+}
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--color-ink);
+}
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px var(--color-ink);
+}
+
+.neo-badge {
+  @apply inline-flex items-center gap-1 px-3 py-1 font-heading font-semibold text-xs border-2 border-ink rounded-full;
+  box-shadow: 2px 2px 0px var(--color-ink);
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes twinkle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== SCROLLBAR ===== */
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-pink-light); }
+::-webkit-scrollbar-thumb {
+  background: var(--color-pink-dark);
+  border: 2px solid var(--color-ink);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover { background: var(--color-lavender); }
+
+::selection {
+  background: var(--color-pink);
+  color: var(--color-ink);
+}
