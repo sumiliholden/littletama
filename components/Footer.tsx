@@ -13,7 +13,7 @@ export default function Footer() {
               strokeWidth={2.5}
             />
             <span className="font-heading font-bold text-lg">
-              TamaPortfolio
+              LittleTama
             </span>
           </div>
           <p className="text-sm opacity-80">
@@ -32,7 +32,7 @@ export default function Footer() {
             and lots of Tamagotchi care
           </p>
           <p className="font-heading">
-            &copy; {new Date().getFullYear()} TamaPortfolio
+            &copy; {new Date().getFullYear()} LittleTama
           </p>
         </div>
       </div>
