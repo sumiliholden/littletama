@@ -5,7 +5,7 @@ import Providers from '@/components/Providers';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Tamagotchi Portfolio ★',
+  title: 'LittleTama ★',
   icons: { icon: '/favicon.svg' },
 };
 
