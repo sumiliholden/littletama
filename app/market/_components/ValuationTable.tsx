@@ -82,10 +82,10 @@ export default function ValuationTable() {
                     {formatLabel(tama.condition)}
                   </td>
                   <td className="px-4 py-3 border-b border-ink/10">
-                    ${tama.price_bought}
+                    ₱{tama.price_bought}
                   </td>
                   <td className="px-4 py-3 border-b border-ink/10 font-bold">
-                    ${tama.market_price}
+                    ₱{tama.market_price}
                   </td>
                   <td
                     className="px-4 py-3 border-b border-ink/10 font-bold"
@@ -93,7 +93,7 @@ export default function ValuationTable() {
                       color: pl >= 0 ? '#2E7D32' : '#C62828',
                     }}
                   >
-                    {pl >= 0 ? '+' : ''}${pl.toFixed(2)}
+                    {pl >= 0 ? '+' : ''}₱{pl.toFixed(2)}
                   </td>
                 </tr>
               );

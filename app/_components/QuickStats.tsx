@@ -17,7 +17,7 @@ export default function QuickStats() {
     },
     {
       icon: <TrendingUp size={28} />,
-      value: `$${items?.reduce((sum, t) => sum + parseFloat(t.market_price), 0).toFixed(0) ?? 0}`,
+      value: `₱${items?.reduce((sum, t) => sum + parseFloat(t.market_price), 0).toFixed(0) ?? 0}`,
       label: 'Total Value',
       bg: 'bg-mint',
     },

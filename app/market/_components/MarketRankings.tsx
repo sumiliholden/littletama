@@ -54,7 +54,7 @@ export default function MarketRankings() {
                 </span>
               </div>
               <span className="font-heading font-bold text-lg text-lavender-dark">
-                ${tama.market_price}
+                ₱{tama.market_price}
               </span>
             </div>
           ))}
@@ -85,7 +85,7 @@ export default function MarketRankings() {
                   {tama.name}
                 </span>
                 <span className="text-xs opacity-60">
-                  ${tama.price_bought} → ${tama.market_price}
+                  ₱{tama.price_bought} → ₱{tama.market_price}
                 </span>
               </div>
               <span

@@ -51,7 +51,7 @@ export default function TamagotchiCard({
               {formatLabel(tama.rarity)}
             </span>
             <span className="font-heading font-bold text-xl text-lavender-dark">
-              ${tama.market_price}
+              ₱{tama.market_price}
             </span>
           </div>
         </div>
@@ -110,14 +110,14 @@ export default function TamagotchiCard({
                 <span className="font-heading font-semibold text-xs uppercase tracking-widest opacity-50">
                   Purchase Price
                 </span>
-                <span>${tama.price_bought}</span>
+                <span>₱{tama.price_bought}</span>
               </div>
               <div className="flex flex-col gap-1">
                 <span className="font-heading font-semibold text-xs uppercase tracking-widest opacity-50">
                   Market Value
                 </span>
                 <span className="font-heading font-bold text-lg text-lavender-dark">
-                  ${tama.market_price}
+                  ₱{tama.market_price}
                 </span>
               </div>
               <div className="flex flex-col gap-1">
@@ -138,7 +138,7 @@ export default function TamagotchiCard({
                   parseFloat(tama.price_bought)
                     ? '+'
                     : ''}
-                  $
+                  ₱
                   {(
                     parseFloat(tama.market_price) -
                     parseFloat(tama.price_bought)

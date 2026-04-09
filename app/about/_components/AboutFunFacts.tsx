@@ -13,7 +13,7 @@ const funFacts = [
     emoji: '🎀',
     fact: 'Sanrio collabs are the most sought-after by collectors',
   },
-  { emoji: '💰', fact: 'Rare vintage models can sell for $500+' },
+  { emoji: '💰', fact: 'Rare vintage models can sell for ₱10000+' },
   {
     emoji: '📱',
     fact: 'Modern models have Bluetooth, Wi-Fi, and color screens',
