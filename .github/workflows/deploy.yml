@@ -50,7 +50,6 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /var/www/littletama
-            npm ci --production
-            pm2 restart littletama || pm2 start npm --name "littletama" -- start
-            pm2 save
-            echo "✅ Deployment completed successfully!"
+            /usr/bin/pm2 restart littletama || /usr/bin/pm2 start npm --name "littletama" -- start
+            /usr/bin/pm2 save
+            echo "✅ PM2 restart completed"
